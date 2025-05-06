@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "username": "dev_user1",
+      "password": "dev_password1",
+      "email": "dev_user1@example.com",
+      "role": "developer"
+    },
+    {
+      "username": "dev_user2",
+      "password": "dev_password2",
+      "email": "dev_user2@example.com",
+      "role": "tester"
+    }
+  ]
+}

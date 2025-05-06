@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "username": "qa_user1",
+      "password": "qa_password1",
+      "email": "qa_user1@example.com",
+      "role": "qa_engineer"
+    },
+    {
+      "username": "qa_user2",
+      "password": "qa_password2",
+      "email": "qa_user2@example.com",
+      "role": "qa_lead"
+    }
+  ]
+}

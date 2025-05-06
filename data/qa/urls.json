@@ -1,0 +1,7 @@
+{
+  "base": "https://playwright.dev",
+  "docs": {
+    "intro": "/docs/intro",
+    "install": "docs/intro#installing-playwright"
+  }
+}

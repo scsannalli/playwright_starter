@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "username": "uat_user1",
+      "password": "uat_password1",
+      "email": "uat_user1@example.com",
+      "role": "uat_tester"
+    },
+    {
+      "username": "uat_user2",
+      "password": "uat_password2",
+      "email": "uat_user2@example.com",
+      "role": "uat_lead"
+    }
+  ]
+}
