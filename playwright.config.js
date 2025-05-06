@@ -31,9 +31,9 @@ module.exports = defineConfig({
 });
 module.exports.projects.forEach(project => {
   if (process.env.ENV === 'qa') {
-    project.use.baseURL = 'https://qa.playwright.dev';
-  } else if (process.env.ENV === 'sit') {
-    project.use.baseURL = 'https://sit.playwright.dev';
+    project.use.baseURL = 'https://playwright.dev';
+  } else if (process.env.ENV === 'dev') {
+    project.use.baseURL = 'https://playwright.dev';
   } else if (process.env.ENV === 'uat') {
     project.use.baseURL = 'https://uat.playwright.dev';
   }

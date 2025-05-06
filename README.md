@@ -30,19 +30,12 @@ npx playwright install
 ```
 playwright_starter/
 ├── pages/              # Page Object Model classes
-│   ├── HomePage.js
-│   └── DocsPage.js
 ├── tests/             # Test files
-│   └── example.spec.js
 ├── data/              # Environment-specific data
 │   ├── dev/
-│   │   └── userdata.json
 │   ├── qa/
-│   │   └── userdata.json
 │   └── uat/
-│       └── userdata.json
 ├── utils/             # Utility functions
-│   └── dataReader.js
 ├── playwright.config.js  # Playwright configuration
 └── package.json       # Project dependencies
 ```
@@ -51,22 +44,45 @@ playwright_starter/
 
 ### Basic Test Execution
 ```bash
+# Run all tests
 npx playwright test
-```
 
-### Run Tests in UI Mode
-```bash
+# Run tests in UI mode
 npx playwright test --ui
-```
 
-### Run Tests Headlessly
-```bash
+# Run tests headlessly
 npx playwright test --headed
+
+# Run specific test
+npx playwright test tests/example.spec.js
 ```
 
-### Run Specific Test
+### Browser-Specific Test Execution
 ```bash
-npx playwright test tests/example.spec.js
+# Run tests on specific browser
+npm run test:chrome    # Chrome
+npm run test:firefox   # Firefox
+npm run test:webkit    # WebKit
+
+# Run Chrome tests in headed mode
+npm run test:chrome:headed
+
+# Run tests with specific browser using npx
+npx playwright test --project=chromium    # Chrome
+npx playwright test --project=firefox     # Firefox
+npx playwright test --project=webkit      # WebKit
+```
+
+### Environment-Specific Test Execution
+```bash
+# Set environment variable
+ENV=qa npx playwright test
+
+# Override base URL
+BASE_URL=https://your-url.com npx playwright test
+
+# Combine environment and browser
+ENV=qa npm run test:chrome
 ```
 
 ## Configuration

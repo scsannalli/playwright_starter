@@ -20,6 +20,7 @@ class DocsPage {
     const installUrl = await getUrl(process.env.ENV || 'qa', 'docs.install');
     await expect(this.page).toHaveURL(installUrl);
   }
+  
 }
 
 module.exports = DocsPage;
