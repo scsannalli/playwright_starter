@@ -7,7 +7,7 @@ const fs = require('fs').promises;
  */
 async function readUserData(environment = 'dev') {
   try {
-    const data = await fs.readFile(`data/${environment}/userdata.json`, 'utf8');
+    const data = await fs.readFile(`data/${environment}/users.json`, 'utf8');
     return JSON.parse(data);
   } catch (error) {
     console.error(`Error reading user data for environment ${environment}:`, error);
